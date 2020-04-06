@@ -35,7 +35,9 @@ class TableRowCount extends Constraint
      */
     public function __construct($tableName, $value)
     {
-        parent::__construct();
+        if (method_exists(get_parent_class(),"__construct")) {
+            parent::__construct();
+        }
         $this->tableName = $tableName;
         $this->value     = $value;
     }

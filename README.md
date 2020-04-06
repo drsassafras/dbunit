@@ -1,8 +1,8 @@
-[This extension is no longer maintained](https://github.com/sebastianbergmann/dbunit/issues/217)
-
 # DbUnit
 
 [PHPUnit](https://phpunit.de/) extension for database interaction testing.
+
+A this is a maintained fork the original phpunit/dbunit by Sebastian Bergmann
 
 ## Installation
 
@@ -12,22 +12,4 @@ If you use [Composer](https://getcomposer.org/) to manage the dependencies of yo
 
 ```
 $ composer require --dev phpunit/dbunit
-```
-
-### PHP Archive (PHAR)
-
-You can download a PHAR of DbUnit:
-
-```
-$ wget https://phar.phpunit.de/dbunit.phar
-```
-
-The example below shows how to configure PHPUnit to load all `*.phar` files found in a given directory (`tools/phpunit.d` in this example):
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.0/phpunit.xsd"
-         extensionsDirectory="tools/phpunit.d">
-</phpunit>
 ```
